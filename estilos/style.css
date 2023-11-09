@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+/* #b89aff
+#e394ff --
+#d8bdff
+#aed9fc
+#bdccff */
+
+* {
+    margin: 0px;
+    padding: 0px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+
+    box-sizing: border-box;
+}
+
+:root {
+    --cor01: #b090fc;
+    --cor02: #ffffff;
+    --cor03: #d8bdff;
+    --cor04: #ffdbf8;
+    --cor05: #bdccff;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--cor05);
+}
+
+main {
+    width: 305px;
+    height: 500px;
+    margin: auto;
+
+    position: relative;
+    top: 9%;
+
+    border: 1px solid var(--cor01);
+    border-radius: 39px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.388);
+
+    transition: all 0.2s;
+}
+
+div#imagem {
+    display: block;
+    height: 200px;
+
+    background: url(../imagens/image01.jpg) no-repeat center center;
+    background-size: cover;
+
+    border-radius: 30px 30px 0px 0px;
+}
+
+div#formulario {
+    display: block;
+    position: absolute;
+    transform: translate(0%, 0%);
+
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+
+    background-color: var(--cor02);
+    border-radius: 0px 0px 30px 30px;
+}
+
+#formulario h1 {
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: var(--cor01);
+}
+
+#formulario p {
+    display: block;
+    line-height: 1.3em;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+p#email {
+    background-color: var(--cor03);
+}
+
+p#senha {
+    background-color: var(--cor03);
+}
+
+input {
+    border-radius: 10px;
+    padding: 6px;
+}
+
+input.form {
+    background-color: var(--cor02);
+    width: 86%;
+}
+
+input.form:hover {
+    background-color: var(--cor04);
+}
+
+span {
+    color: var(--cor02);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    translate: 0px 7px;
+}
+
+.submit {
+    display: block;
+    width: 100%;
+    border: 2px solid var(--cor01);
+}
+
+.submit:hover {
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+#entrar {
+    background-color: var(--cor01);
+    color: var(--cor02);
+    margin-bottom: 5px;
+}
+
+#entrar:hover {
+    background-color: var(--cor04);
+    border: 2px solid var(--cor04);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.132);
+    cursor: pointer;
+}
+
+#recover {
+    color: var(--cor01);
+    background-color: var(--cor02);
+    text-align: center;
+    text-decoration: none;
+
+    border-radius: 10px;
+    padding: 6px;
+}
+
+#recover:hover {
+    color: var(--cor02);
+    background-color: var(--cor03);
+    border: 2px solid var(--cor03);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.132);
+}
